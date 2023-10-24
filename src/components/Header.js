@@ -1,6 +1,6 @@
 import React from "react";
 
-function TopHeader() {
+function Header() {
 
     const headerStyle = {
         background: '#3DD2CC',
@@ -17,4 +17,4 @@ function TopHeader() {
     );
 }
 
-export default TopHeader;
+export default Header;

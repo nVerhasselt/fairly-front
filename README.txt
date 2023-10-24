@@ -1,4 +1,4 @@
-I am trying to work on this project since a long time.
+I'm trying to work on this project since a long time.
 
 I don't have much time because I am working in a restaurant until I find a company.
 
@@ -18,11 +18,11 @@ I want to try working in mobile first.
     .Email input
     .Password input
     .Microsoft connexion button
-    .'Inscription' button (Link to inscription page)
+    .'Inscription' button (Link to register page)
 
 -Home page:
-    .Fairly App header (no actions on mobile / navBar on desktop)
-    .Session list
+    .Fairly App header (title, no actions on mobile / navBar on desktop)
+    .Sessions list
     .Plus button (popover Add session link / Join a session link)
     .Bottom NavBar for mobile, footer with infos like RGPD etc... in desktop.
 
