@@ -1,15 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Link, NavLink } from 'react-router-dom';
+import NavFooter from './components/NavFooter.js';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <div>connexion</div>
+    element: 
+    <div>
+      Connexion
+      
+      
+      <nav>
+        <NavLink to="/inscription">Inscritption</NavLink>
+        <NavLink to="/home">Home</NavLink>
+        <NavLink to="/session">Session</NavLink>
+      </nav>
+
+      <NavFooter/>
+    </div>
   },
   {
     path: '/inscritption',
-    element: <div>inscritption</div> 
+    element: <div>Inscritption</div> 
+  },
+  {
+    path: '/home',
+    element: <div>Home</div>
+  },
+  {
+    path: '/session',
+    element: <div>Session</div>
   }
 ])
 
