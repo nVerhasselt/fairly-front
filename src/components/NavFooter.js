@@ -3,8 +3,13 @@ import { PersonFill } from 'react-bootstrap-icons';
 
 function NavFooter() {
 
+   const customFooter ={
+      padding: 0
+   }
+
+
     return (
-        <footer className="page-footer cyan darken-2">
+        <footer className="page-footer cyan darken-2" style={customFooter}>
           <div className="container">
             <div className="row">
 
@@ -17,13 +22,17 @@ function NavFooter() {
             </div>
           </div>
 
+
           {/* COPYRIGHT BOTTOM FOOTER */}
-          {/* <div className="footer-copyright">
+
+          {/* 
+          <div className="footer-copyright">
             <div className="container">
             © 2023 Copyright Text
             <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
-          </div> */}
+          </div> 
+          */}
 
         </footer>
     );

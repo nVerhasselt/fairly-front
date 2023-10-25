@@ -8,8 +8,8 @@ I finally relied on my partner advice (he is a developer).
 
 I realize how hard it is to code after a month. 
 
-
 I want to try working in mobile first.
+
 
 -Routes (WIP)
 
@@ -39,3 +39,5 @@ Login:
     -Match colors
     -Remove card
     -Add Microsoft connexion
+
+Watch this: https://www.youtube.com/watch?v=uhc4Fj2vvu0&ab_channel=Grafikart.fr again

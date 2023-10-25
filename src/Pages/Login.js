@@ -5,7 +5,7 @@ function Login() {
 
     const iconStyle = {
         fontSize: '60px',
-        background: '#3DD2CC',
+        background: '#0097a7',
         borderRadius: '50px',
         color: 'white',
         padding: '0.5rem',
@@ -15,6 +15,8 @@ function Login() {
       };
 
     const buttonStyle = {
+        marginTop: '1rem',
+        marginBottom: '1rem',
         borderRadius: '20px'
     };
 
@@ -26,7 +28,7 @@ function Login() {
       <div className="row">
         <div className="col s12 m8 offset-m2">
           <div className="card hoverable">
-            <div className="card-stacked">
+            <div className="card-stacked"> 
 
               <div className="card-content">
 
@@ -54,7 +56,7 @@ function Login() {
                 <button type="submit" className="btn cyan darken-2" style={buttonStyle}>Valider</button>
               </div>
 
-            </div>
+             </div>
           </div>
         </div>
       </div>

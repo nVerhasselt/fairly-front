@@ -3,11 +3,16 @@ import React from "react";
 function Header() {
 
     const headerStyle = {
-        background: '#3DD2CC',
+        background: '#0097a7',
         color: 'white',
         textAlign: 'center',
-        fontSize: '1.8rem',
-        padding: '0.8rem'
+        fontSize: '2rem',
+        padding: '0.8rem',
+        fontFamily: 'Lobster, sans serif'
+    }
+
+    const headerTitleStyle = {
+        fontFamily :'Lobster'
     }
 
     return (
