@@ -41,3 +41,16 @@ Login:
     -Add Microsoft connexion
 
 Watch this: https://www.youtube.com/watch?v=uhc4Fj2vvu0&ab_channel=Grafikart.fr again
+
+_________________________________________________________________________________
+
+Authentication
+
+Login page will be the a first destination of the app.
+
+-Compare the input infos with database and open Home page if their is a matching user.
+
+Axios? Fetch?
+
+My partner made the back-end of the application in .NET. I'm working on the connexion between both apps.
+I'm not familiar with .NET.
