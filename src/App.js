@@ -8,20 +8,24 @@ import Home from './Pages/Home';
 const router = createBrowserRouter([
   {
     path: '/',
-    /** Outlet is a react-router-dom component, put the elements of the children routes on this level */
-    element: <div><Outlet/></div>,
-    children: [
-      {
-        path: 'login',
-        element: <Login/>
-      },
-      {
-        path: '/home',
-        element: <Home/>
-      },
-    ]
+    element: <Home/>
   },
-]);
+ 
+  {
+    path: '/Login',
+    element: <Login/>
+  },
+    ]);
+  
+
+
+// function ErrorPage() {
+//   const error = useRouteError()
+//   return 
+//   <>
+//     <h1>Une erreur est survenue</h1>
+//   </>
+// }
 
 
 function App() {
