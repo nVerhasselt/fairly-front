@@ -20,6 +20,11 @@ const router = createBrowserRouter([
     path: '/Login',
     element: <Login/>
   },
+
+  {
+    path: '/Settings',
+    element: <Settings/>
+  },
   
   {
     path: '/AddSession',
@@ -35,7 +40,6 @@ const router = createBrowserRouter([
     path: '/AddOperation',
     element: <AddOperation/>
   }
-
 ]);
   
 
