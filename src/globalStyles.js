@@ -15,7 +15,7 @@ export const Header = styled.header`
     text-align: center;
     font-size: 2rem;
     padding: 10px;
-    font-family: 'Lobster', sans serif;
+    font-family: 'Lobster Two', sans-serif;
     z-index: 1;
     width: 100%;
     height: 10%;

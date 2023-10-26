@@ -9,12 +9,12 @@ I finally relied on my partner advice (he is a developer).
 I realize how hard it is to code after a month. 
 
 I want to try working in mobile first.
-
+___________________________________________________________________________________
 
 -Routes (WIP)
 
 -Login page:
-    .logo (react icon, will be updated one day)
+    .logo (react icon, will be updated)
     .Email input
     .Password input
     .Microsoft connexion button
@@ -29,6 +29,7 @@ I want to try working in mobile first.
 -Register page? (low priority)
 
 _________________________________________________________________________________
+TO DO:
 
 Home:
     -Reduce NavFooter padding
@@ -42,13 +43,33 @@ Login:
 
 Watch this: https://www.youtube.com/watch?v=uhc4Fj2vvu0&ab_channel=Grafikart.fr again
 
+DONE
 _________________________________________________________________________________
 
 I'm working on the static pages and style first.
 I'd like to use styled components. 
 I want a global style, because I'm repeating code and that's not good.
 Transfer the style of each page in that styled components file. 
-I'll create Page specific style files later if needed.
+I'll create specific page style files later if needed.
+
+I've started these views:
+    -Home
+    -Login
+    -AddSession
+    -Session
+    -AddOperation
+
+I have to start these views:
+    -Settings
+    -Balance
+    -EditOperation
+    -ErrorPage
+    -JoinSession
+    -Register
+
+Add static navigation
+Add animations
+
 
 _________________________________________________________________________________
 TO DO later:
@@ -63,7 +84,6 @@ Axios? Fetch?
 
 My partner made the back-end of the application in .NET. I'm working on the connexion between both apps.
 I'm not familiar with .NET.
-
 
 
 .Chose fonts for the rest of the app

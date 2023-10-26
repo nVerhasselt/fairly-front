@@ -17,30 +17,16 @@ function AddSession() {
 
               <input
                 placeholder="Titre"
-                id="first_name"
+                id="session_title"
                 type="text"   
               />
 
               <input
-                placeholder="montant en euros"
-                id="expense"
-                type="number"
-                className="validate"
+                placeholder="Description"
+                id="session_description"
+                type="text"   
               />
 
-              <input
-                placeholder="Date"
-                id="date"
-                type="date"
-                className="validate"
-              />
-
-              <input
-                placeholder="Payé par"
-                id="user"
-                type="text"
-                className="validate"
-              /> 
             </div>
 
             <div className="input-field col s12">
