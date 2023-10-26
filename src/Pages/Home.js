@@ -1,6 +1,6 @@
 import React from "react";
-import NavFooter from "../components/NavFooter";
 import * as Styled from "../globalStyles";
+import { PersonFill } from 'react-bootstrap-icons';
 
 function Home() {
   return (
@@ -49,7 +49,20 @@ function Home() {
 
       </Styled.Main>
 
-      <NavFooter />
+      <Styled.Footer className="page-footer cyan darken-2"> 
+          <div className="container">
+            <div className="row ">
+
+              <div className="col l4 offset-l2 s12">
+                <ul>
+                  <li><a className="grey-text text-lighten-3 right" href="#!"><PersonFill size={30}/></a></li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+      </Styled.Footer>
+
     </body>
   );
 }

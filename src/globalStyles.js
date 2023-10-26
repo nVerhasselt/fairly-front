@@ -35,19 +35,31 @@ export const PlusButton = styled.a`
     bottom: 75px;
 `;
 
-//TODO: use this component for Session Page for the list of operations.
 export const Collection = styled.div`
     width: 100%;
     margin: 0;
     padding: 0;
 `;
 
- export const Input = styled.input`
-    width: 100%;
-    background: blue;
-    height: 4rem;
+//TODO: Find out why this doesn't work, I'd like to use it as the doc says ( https://styled-components.com/docs/basics )
+
+// export const OperationCollection = styled(Collection)`
+//     text-align: center;
+// `;
+
+export const Input = styled.input`
+   margin-bottom: 4rem;
 `;
 
 export const Form = styled.form`
     min-height: 100vh;
+`;
+
+export const TitleH1 = styled.h1`
+    font-size: 1rem;
+`;
+
+export const FooterNavList = styled.ul`
+    display: flex;
+    justify-content: space-between;
 `;

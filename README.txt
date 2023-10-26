@@ -28,7 +28,7 @@ I want to try working in mobile first.
 
 -Register page? (low priority)
 
-_______________________________________________________________________________
+_________________________________________________________________________________
 
 Home:
     -Reduce NavFooter padding
@@ -46,10 +46,12 @@ ________________________________________________________________________________
 
 I'm working on the static pages and style first.
 I'd like to use styled components. 
-I want a global style, because I'm starting repeating code and that's not good.
+I want a global style, because I'm repeating code and that's not good.
 Transfer the style of each page in that styled components file. 
 I'll create Page specific style files later if needed.
 
+_________________________________________________________________________________
+TO DO later:
 
 Authentication
 

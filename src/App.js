@@ -1,9 +1,10 @@
 import './App.css';
 import { createBrowserRouter, RouterProvider, Link, NavLink, Outlet } from 'react-router-dom';
-import NavFooter from './components/NavFooter';
 import Login from './Pages/Login';
 import Home from './Pages/Home';
+import Session from './Pages/Session';
 import AddSession from './Pages/AddSession';
+import AddOperation from './Pages/AddOperation';
 
 // Style import
 import * as Styled from "./globalStyles";
@@ -19,11 +20,23 @@ const router = createBrowserRouter([
     path: '/Login',
     element: <Login/>
   },
+  
   {
     path: '/AddSession',
     element: <AddSession/>
   },
-    ]);
+
+  {
+    path: '/Session',
+    element: <Session/>
+  },
+  
+  {
+    path: '/AddOperation',
+    element: <AddOperation/>
+  }
+
+]);
   
 
 
