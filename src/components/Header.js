@@ -1,27 +1,12 @@
 import React from "react";
+import * as Styled from "../globalStyles";
 
 function Header() {
 
-    const headerStyle = {
-        position: 'sticky',
-        top: '0px',
-        background: '#0097a7',
-        color: 'white',
-        textAlign: 'center',
-        fontSize: '2rem',
-        padding: '0.8rem',
-        fontFamily: 'Lobster, sans serif',
-        zIndex: '1'
-    }
-
-    const headerTitleStyle = {
-        fontFamily :'Lobster'
-    }
-
     return (
-        <header style={headerStyle}>
+        <Styled.Header>
             Fairly App
-        </header>
+        </Styled.Header>
     );
 }
 

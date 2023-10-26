@@ -44,6 +44,11 @@ Watch this: https://www.youtube.com/watch?v=uhc4Fj2vvu0&ab_channel=Grafikart.fr 
 
 _________________________________________________________________________________
 
+I'm working on the static pages and style first.
+I'd like to use styled components. 
+I want a global style, because I'm starting repeating code and that's not good.
+
+
 Authentication
 
 Login page will be the a first destination of the app.

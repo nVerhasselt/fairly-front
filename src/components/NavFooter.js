@@ -1,21 +1,14 @@
 import React from "react";
 import { PersonFill } from 'react-bootstrap-icons';
+import * as Styled from '../globalStyles';
 
 function NavFooter() {
 
-   const customFooter ={
-      padding: '0',
-      margin: '0',
-      position: 'sticky',
-      bottom: '0px',
-      width: '100%'
-   }
-
-
     return (
-        <footer className="page-footer cyan darken-2" style={customFooter}>
+
+      <Styled.Footer className="page-footer cyan darken-2"> 
           <div className="container">
-            <div className="row">
+            <div className="row ">
 
               <div className="col l4 offset-l2 s12">
                 <ul>
@@ -25,10 +18,9 @@ function NavFooter() {
               
             </div>
           </div>
-
+        
 
           {/* COPYRIGHT BOTTOM FOOTER */}
-
           {/* 
           <div className="footer-copyright">
             <div className="container">
@@ -38,7 +30,8 @@ function NavFooter() {
           </div> 
           */}
 
-        </footer>
+        
+      </Styled.Footer>
     );
 }
 
