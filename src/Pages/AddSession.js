@@ -1,36 +1,29 @@
 import React from "react";
-import Header from "../components/Header";
 import NavFooter from "../components/NavFooter";
+import * as Styled from "../globalStyles";
 
 function AddSession() {
-
-  return (
-    <div className="container-fluid">
-        <body>
-      <Header /> 
-
-      <div className="row">
-        <form className="col s12">
-          <div className="row">
-            <div className="input-field col s6">
-
+    return (
+      <body>
+        <div className="container-fluid">
+        <Styled.Header>Nouvelle session</Styled.Header>
+    
+          <Styled.Form className="row">
+            <div className="input-field col s12">
               <input
-                placeholder="Placeholder"
+                placeholder="Titre"
                 id="first_name"
                 type="text"
                 className="validate"
               />
-
-              <label for="first_name">First Name</label>
             </div>
-          </div>
-        </form>
-      </div>
-
-      <NavFooter />
+          </Styled.Form>
+        
+  
+        
+        </div>
+        <NavFooter />
       </body>
-    </div>
-  );
-}
-
+    );
+  }
 export default AddSession;

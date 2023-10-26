@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-// MAIN STYLE
 export const Main = styled.main `
     display: flex;
     flex-direction: column;
@@ -8,7 +7,6 @@ export const Main = styled.main `
     min-height: 100vh;
 `;
 
-// HEADER STYLE
 export const Header = styled.header`
     position: sticky;
     top: 0px;
@@ -16,13 +14,13 @@ export const Header = styled.header`
     color: white;
     text-align: center;
     font-size: 2rem;
-    padding: 0.8rem;
+    padding: 10px;
     font-family: 'Lobster', sans serif;
     z-index: 1;
     width: 100%;
+    height: 10%;
 `;
 
-// FOOTER STYLE
 export const Footer = styled.footer`
     padding: 0;
     margin: 0;
@@ -32,8 +30,24 @@ export const Footer = styled.footer`
     height:4.5rem;
 `;
 
-//PLUS BUTTON STYLE
-export const PlusButton = styled.button`
-
+export const PlusButton = styled.a`
+    position: fixed;
+    bottom: 75px;
 `;
- 
+
+//TODO: use this component for Session Page for the list of operations.
+export const Collection = styled.div`
+    width: 100%;
+    margin: 0;
+    padding: 0;
+`;
+
+ export const Input = styled.input`
+    width: 100%;
+    background: blue;
+    height: 4rem;
+`;
+
+export const Form = styled.form`
+    min-height: 100vh;
+`;

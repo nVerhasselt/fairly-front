@@ -11,7 +11,6 @@ function Login() {
         padding: '0.5rem',
         marginTop: '4rem',
         marginBottom: '4rem'
-          // Add any color you prefer
       };
 
     const buttonStyle = {

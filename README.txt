@@ -47,6 +47,8 @@ ________________________________________________________________________________
 I'm working on the static pages and style first.
 I'd like to use styled components. 
 I want a global style, because I'm starting repeating code and that's not good.
+Transfer the style of each page in that styled components file. 
+I'll create Page specific style files later if needed.
 
 
 Authentication
