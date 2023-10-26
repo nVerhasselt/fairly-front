@@ -4,7 +4,11 @@ import { PersonFill } from 'react-bootstrap-icons';
 function NavFooter() {
 
    const customFooter ={
-      padding: 0
+      padding: '0',
+      margin: '0',
+      position: 'sticky',
+      bottom: '0px',
+      width: '100%'
    }
 
 

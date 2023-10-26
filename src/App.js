@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider, Link, NavLink, Outlet } from 'reac
 import NavFooter from './components/NavFooter.js';
 import Login from './Pages/Login';
 import Home from './Pages/Home';
+import AddSession from './Pages/AddSession';
 
 
 const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: '/Login',
     element: <Login/>
+  },
+  {
+    path: '/AddSession',
+    element: <AddSession/>
   },
     ]);
   

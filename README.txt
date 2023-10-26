@@ -54,3 +54,7 @@ Axios? Fetch?
 
 My partner made the back-end of the application in .NET. I'm working on the connexion between both apps.
 I'm not familiar with .NET.
+
+
+
+.Chose fonts for the rest of the app
