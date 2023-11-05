@@ -43,6 +43,8 @@ function Home() {
           </div>
         </Styled.Collection>
 
+        //TODO: Icone notifications invitation session, demande de remboursement d'amis, remboursement paiement reçu.
+
         <Styled.PlusButton className="btn-floating btn-large waves-effect waves-light cyan darken-2">
           <i className="material-icons">add</i>
         </Styled.PlusButton>

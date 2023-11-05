@@ -60,7 +60,7 @@ I've started these views:
     -AddOperation
 
 I have to start these views:
-    -Settings
+    -Settings (WIP)
     -Balance
     -EditOperation
     -ErrorPage
@@ -68,8 +68,16 @@ I have to start these views:
     -Register
 
 Add static navigation
-Add animations
+    -Look for the right way to navigate with React router dom
 
+Add animations
+    -Popover on plus button of Home -> Add Session Or Join a session
+
+Make it responsive, add media queries for desktop
+_________________________________________________________________________________
+05/11/2023
+
+I want to make the connexion with the back-end. I need to understand de back-end and the database first, I'm working on it.
 
 _________________________________________________________________________________
 TO DO later:

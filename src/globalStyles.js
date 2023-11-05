@@ -18,7 +18,6 @@ export const Header = styled.header`
     font-family: 'Lobster Two', sans-serif;
     z-index: 1;
     width: 100%;
-    height: 10%;
 `;
 
 export const Footer = styled.footer`
@@ -27,7 +26,7 @@ export const Footer = styled.footer`
     position: sticky;
     bottom: 0px;
     width: 100%;
-    height:4.5rem;
+    height:4rem;
 `;
 
 export const PlusButton = styled.a`
@@ -62,4 +61,9 @@ export const TitleH1 = styled.h1`
 export const FooterNavList = styled.ul`
     display: flex;
     justify-content: space-between;
+`;
+
+export const Notifictions = styled.label`
+    font-size: 1rem;
+    padding-right: 4rem;
 `;

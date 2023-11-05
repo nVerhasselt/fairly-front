@@ -1,9 +1,24 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import * as Styled from "../globalStyles";
 import { PersonFill } from "react-bootstrap-icons";
 import { BiArrowBack, BiTransfer } from "react-icons/bi";
 
 function Session() {
+
+  const [date, setData] = useState(null);
+
+  useEffect(() => {
+    // Define the API endpoint URL
+    const apiUrl = 'http://localhost:5162/swagger'; // Replace with your API endpoint URL
+
+    // Make a GET request to the API
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((result) => setData(result))
+      .catch((error) => console.error('Error:', error));
+  }, []);
+
+  
   return (
     <body>
       <Styled.Header>Session Name</Styled.Header>

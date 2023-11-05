@@ -5,11 +5,12 @@ import Home from './Pages/Home';
 import Session from './Pages/Session';
 import AddSession from './Pages/AddSession';
 import AddOperation from './Pages/AddOperation';
+import Settings from './Pages/Settings';
 
 // Style import
 import * as Styled from "./globalStyles";
 
-
+//TODO: Use children and outlet to understand their 
 const router = createBrowserRouter([
   {
     path: '/',
@@ -41,7 +42,6 @@ const router = createBrowserRouter([
     element: <AddOperation/>
   }
 ]);
-  
 
 
 // function ErrorPage() {

@@ -11,16 +11,15 @@ function AddOperation() {
         <Styled.Form className="row">
           <div className="input-field col s12">
 
+            <input placeholder="Titre" id="operation_title" type="text" />
+
             <select class="browser-default">
               <option value="" disabled selected>
                 Type d'opération
               </option>
               <option value="1">Dépense</option>
               <option value="2">Revenu</option>
-              
             </select>
-
-            <input placeholder="Titre" id="operation_title" type="text" />
 
             <input
               placeholder="montant en euros"
