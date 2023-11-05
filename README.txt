@@ -77,8 +77,8 @@ Make it responsive, add media queries for desktop
 _________________________________________________________________________________
 05/11/2023
 
-I want to make the connexion with the back-end. I need to understand de back-end and the database first, I'm working on it.
-
+I want to make the connexion with the back-end. 
+I need to understand de back-end and the database first to make sure we understood each other and my pages match for now.
 _________________________________________________________________________________
 TO DO later:
 
