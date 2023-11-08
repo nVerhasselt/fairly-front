@@ -1,0 +1,22 @@
+API call with promises
+
+// METHODE 1 => 'PROMISES'
+    const fetchData = () => { // <= pas de async
+      try
+      {
+               
+        API_call().get('/Session/GetUserSessionsOverview?userID=4')
+        .then(response => 
+          { 
+            setSessionList(response.data);
+          });
+      }
+      catch(exception)
+      {
+        console.error(exception);
+      }
+     
+    };
+
+     // J'appelle la fonction déclarée
+    fetchData();

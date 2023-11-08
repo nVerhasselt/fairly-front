@@ -1,12 +1,6 @@
 I'm trying to work on this project since a long time.
 
-I don't have much time because I am working in a restaurant until I find a company.
-
-It is very hard for me to chose a technology, and start a new project because there are many possibilities.
-
-I finally relied on my partner advice (he is a developer).
-
-I realize how hard it is to code after a month. 
+I don't have much time because I am working in a restaurant until I find a company. 
 
 I want to try working in mobile first.
 ___________________________________________________________________________________
@@ -31,35 +25,17 @@ ________________________________________________________________________________
 _________________________________________________________________________________
 TO DO:
 
-Home:
-    -Reduce NavFooter padding
-    -Find a font for the header 'Fairly App'
-    -Match colors
-
 Login:
-    -Match colors
     -Remove card
     -Add Microsoft connexion
 
 Watch this: https://www.youtube.com/watch?v=uhc4Fj2vvu0&ab_channel=Grafikart.fr again
 
-DONE
-_________________________________________________________________________________
+Authentication
+Login page will be the a first destination of the app?
+-Compare the input infos with database and open Home page if their is a matching user.
 
-I'm working on the static pages and style first.
-I'd like to use styled components. 
-I want a global style, because I'm repeating code and that's not good.
-Transfer the style of each page in that styled components file. 
-I'll create specific page style files later if needed.
-
-I've started these views:
-    -Home
-    -Login
-    -AddSession
-    -Session
-    -AddOperation
-
-I have to start these views:
+Start these views:
     -Settings (WIP)
     -Balance
     -EditOperation
@@ -84,18 +60,3 @@ ________________________________________________________________________________
 
 The API call works with axios. It's ok for development mode. It appears that we would have to make a proxy for deployment.
 _________________________________________________________________________________
-TO DO later:
-
-Authentication
-
-Login page will be the a first destination of the app.
-
--Compare the input infos with database and open Home page if their is a matching user.
-
-Axios? Fetch?
-
-My partner made the back-end of the application in .NET. I'm working on the connexion between both apps.
-I'm not familiar with .NET.
-
-
-.Chose fonts for the rest of the app

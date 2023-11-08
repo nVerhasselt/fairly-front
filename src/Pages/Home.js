@@ -1,8 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import * as Styled from "../globalStyles";
 import { PersonFill } from 'react-bootstrap-icons';
+import API_call from "../Helpers/Api_call";
 
 function Home() {
+
+ //TODO: Make the API call work
+
+ const [sessionList, setSessionList] = useState([]);
+ console.log('SessionList', {sessionList}); 
+
+ useEffect(() => 
+ {
+    // METHODE 2 => 'ASYNC/AWAIT'
+    const fetchDataAsync = async () => { // <= pas de async
+      try
+      {               
+        // dans une méthode asynchrone, l'appel au mot-clé 'await' permet de déclencher une fonction et d'attendre son résultat.
+        const response = await API_call().get('/Session/GetUserSessionsOverview?userID=4');
+        // on passe donc à la ligne du dessous quand le get est terminé, sauf s'il y a une erreur
+        // En ce cas on est dans le catch.
+        setSessionList(response.data);
+      }
+      catch(exception)
+      {
+        console.error(exception);
+      }
+     
+    };
+
+    // function call
+    fetchDataAsync();
+ }, 
+ []);
+
+ 
+  //TODO: Make different components
+
   return (
     <body>
       <Styled.Header>Fairly App</Styled.Header>

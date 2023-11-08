@@ -2,46 +2,19 @@ import React from "react";
 import * as Styled from "../globalStyles";
 import { PersonFill } from "react-bootstrap-icons";
 import { BiArrowBack, BiTransfer } from "react-icons/bi";
-import { useEffect, useState } from "react";
 
 function Session() {
 
-  //TODO: Make the API connexion
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    // Define the API endpoint URL
-    const baseUrl = 'https://localhost:7023/Session/GetUserSessionsOverview?userID=4';
-
-    // Make a GET request to the API using Axios
-    axios.get(baseUrl, {
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'POST, GET, PUT',
-        'Access-Control-Allow-Headers': "Access-Control-Allow-Headers, Origin, X-Requested-With, Content-Type, Accept",
-        'Accept': 'application/json', // Specify the expected response format
-      },
-    })
-    .then((response) =>
-     {
-        console.log("session", {response});
-      setData(response.data);
-    })
-    .catch((error) => console.error('Error:', error));
-  }, []);
-
-
-  //TODO: Make different components
   return (
     <body>
       <Styled.Header>Session Name</Styled.Header>
 
       <Styled.Main className="container-fluid">
-
+        
         <Styled.Collection className="row">
           <div className="collection">
             <a href="#!" className="collection-item">
-              {   } 
+              First transaction
             </a>
 
             <a href="#!" className="collection-item">
