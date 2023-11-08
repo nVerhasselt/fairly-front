@@ -50,13 +50,14 @@ Add animations
     -Popover on plus button of Home -> Add Session Or Join a session
 
 Make it responsive, add media queries for desktop
+
 _________________________________________________________________________________
 05/11/2023
-
 I want to make the connexion with the back-end. 
 I need to understand de back-end and the database first to make sure we understood each other and my pages match for now.
 _________________________________________________________________________________
 07/11/2023
-
 The API call works with axios. It's ok for development mode. It appears that we would have to make a proxy for deployment.
-_________________________________________________________________________________
+________________________________________________________________________________
+08/11/2023
+SessionList and sessionRow components which allows to map the API response object for Home view.
