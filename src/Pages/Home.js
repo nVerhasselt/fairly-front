@@ -6,7 +6,6 @@ import { PersonFill } from "react-bootstrap-icons";
 import API_call from "../Helpers/Api_call";
 
 function Home() {
-
   const [sessionList, setSessionList] = useState([]);
 
   console.log("SessionList", { sessionList });
@@ -32,22 +31,19 @@ function Home() {
     fetchDataAsync();
   }, []);
 
-// *************************************************************
+  // *************************************************************
   // SESSION ROW COMPONENT
   function SessionRow({ session, index }) {
     return (
-      
-<>
+      <>
         {/* Session Name */}
-        <Link to="#!" className="collection-item" >
+        <Link to="#!" className="collection-item">
           {session.sessionName}
         </Link>
-
-        </>     
+      </>
     );
   }
   // *************************************************************
-  
 
   // *************************************************************
   // SESSION LIST COMPONENT
@@ -55,15 +51,13 @@ function Home() {
     return (
       <Styled.Collection className="row">
         <div className="collection">
-
-        {sessionList?.map((session, index) => (
-          <SessionRow
-            key={`session-${index}`}
-            session={session}
-            index={index}
-          />
-        ))}
-
+          {sessionList?.map((session, index) => (
+            <SessionRow
+              key={`session-${index}`}
+              session={session}
+              index={index}
+            />
+          ))}
         </div>
       </Styled.Collection>
     );
@@ -75,17 +69,13 @@ function Home() {
       <Styled.Header>Fairly App</Styled.Header>
 
       <Styled.Main className="container-fluid">
-        
         {/* SESSION LIST COMPONENT CALL */}
         <SessionList />
-        
         //TODO: Icone notifications invitation session, demande de remboursement
         d'amis, remboursement paiement reçu.
-
         <Styled.PlusButton className="btn-floating btn-large waves-effect waves-light cyan darken-2">
           <i className="material-icons">add</i>
         </Styled.PlusButton>
-
       </Styled.Main>
 
       <Styled.Footer className="page-footer cyan darken-2">
@@ -103,7 +93,6 @@ function Home() {
           </div>
         </div>
       </Styled.Footer>
-
     </body>
   );
 }
