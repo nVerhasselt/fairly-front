@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import * as Styled from "../globalStyles";
 import { PersonFill } from "react-bootstrap-icons";
@@ -7,8 +7,9 @@ import API_call from "../Helpers/Api_call";
 
 function Home() {
   const [sessionList, setSessionList] = useState([]);
+  let navigate = useNavigate();
 
-  console.log("SessionList", { sessionList });
+  // console.log("SessionList", { sessionList });
 
   useEffect(() => {
     // METHODE 2 => 'ASYNC/AWAIT'
@@ -38,17 +39,22 @@ function Home() {
     //map the session users and join them with coma to display them inline after session name
     const userNames = session.members.map((member) => member.userName).join(', '); 
 
+    const goToSession = () => {
+      navigate(`/Session/${session.sessionId}`)
+    }
+
     return (
-      //TODO: Transform the link into a div with a onClick which redirects to the session with the sessionId
+
       <>
         {/* Session Name */}
-        <Link to="/Session" className="collection-item">
+        <div onClick={() => goToSession()} className="collection-item">
           <Styled.MainRow>{session.sessionName}</Styled.MainRow>
           <div>{userNames}</div>
-        </Link>
+        </div>
       </>
     );
   }
+
   // *************************************************************
 
 

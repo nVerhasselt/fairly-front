@@ -33,7 +33,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: '/Session',
+    path: '/Session/:id',
     element: <Session/>
   },
   

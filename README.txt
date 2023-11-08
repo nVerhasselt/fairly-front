@@ -60,6 +60,19 @@ ________________________________________________________________________________
 The API call works with axios. It's ok for development mode. It appears that we would have to make a proxy for deployment.
 ________________________________________________________________________________
 08/11/2023
-SessionList and sessionRow components which allows to map the API response object for Home view.
+-SessionList and sessionRow components which allows to map the API response object for Home view.
+-click on a session open session/:id page
 
--
+to do:
+-API call with userId and sessionId payload (see swagger)
+-Components to map transactions
+-Display name, payor, total amount, date -> onClick -> expands and display amount for each, edit button
+
+From Home I can go on Session page after clicking on session div thanks to the sessionId added ad the and of the url. 
+I want to make an API call with userId and sessionId payload.
+
+What does the back-end expect? An object? variables in url? 
+How to get sessionId? 
+With localStorage? https://blog.logrocket.com/localstorage-javascript-complete-guide/#:~:text=The%20setItem()%20method%20allows,the%20value%20attached%20to%20it.
+Or lastIndex? https://stackoverflow.com/questions/3730359/extract-url-fragment-using-jquery
+What is the best use?
