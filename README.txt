@@ -61,3 +61,5 @@ The API call works with axios. It's ok for development mode. It appears that we 
 ________________________________________________________________________________
 08/11/2023
 SessionList and sessionRow components which allows to map the API response object for Home view.
+
+-

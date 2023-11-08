@@ -25,3 +25,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
 }
+
+.footer, .plusButton {
+  background-color: #00bcd4;
+}

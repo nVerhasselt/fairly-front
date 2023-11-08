@@ -10,7 +10,7 @@ export const Main = styled.main `
 export const Header = styled.header`
     position: sticky;
     top: 0px;
-    background: #0097a7;
+    background:#00bcd4;
     color: white;
     text-align: center;
     font-size: 2rem;
@@ -27,11 +27,13 @@ export const Footer = styled.footer`
     bottom: 0px;
     width: 100%;
     height:4rem;
+    background-colour: #00bcd4;
 `;
 
 export const PlusButton = styled.a`
     position: fixed;
     bottom: 75px;
+    background-color: #00bcd4;
 `;
 
 export const Collection = styled.div`
@@ -67,3 +69,13 @@ export const Notifictions = styled.label`
     font-size: 1rem;
     padding-right: 4rem;
 `;
+
+export const MainRow = styled.div`
+    color: #002F36;
+    font-size: 1rem;
+    font-weight: 550;
+`
+
+export const SecondaryRow = styled.div`
+    color: #007787;
+`

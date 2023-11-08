@@ -26,27 +26,36 @@ function Home() {
         console.error(exception);
       }
     };
-
     // function call
     fetchDataAsync();
   }, []);
 
   // *************************************************************
   // SESSION ROW COMPONENT
+  // *************************************************************
   function SessionRow({ session, index }) {
+
+    //map the session users and join them with coma to display them inline after session name
+    const userNames = session.members.map((member) => member.userName).join(', '); 
+
     return (
+      //TODO: Transform the link into a div with a onClick which redirects to the session with the sessionId
       <>
         {/* Session Name */}
-        <Link to="#!" className="collection-item">
-          {session.sessionName}
+        <Link to="/Session" className="collection-item">
+          <Styled.MainRow>{session.sessionName}</Styled.MainRow>
+          <div>{userNames}</div>
         </Link>
       </>
     );
   }
   // *************************************************************
 
+
+
   // *************************************************************
   // SESSION LIST COMPONENT
+  // *************************************************************
   function SessionList() {
     return (
       <Styled.Collection className="row">
@@ -73,12 +82,14 @@ function Home() {
         <SessionList />
         //TODO: Icone notifications invitation session, demande de remboursement
         d'amis, remboursement paiement reçu.
-        <Styled.PlusButton className="btn-floating btn-large waves-effect waves-light cyan darken-2">
+
+        <Styled.PlusButton className="btn-floating btn-large waves-effect waves-light plusButton">
           <i className="material-icons">add</i>
         </Styled.PlusButton>
+        
       </Styled.Main>
 
-      <Styled.Footer className="page-footer cyan darken-2">
+      <Styled.Footer className="page-footer footer">
         <div className="container">
           <div className="row ">
             <div className="col l4 offset-l2 s12">
