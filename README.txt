@@ -62,6 +62,7 @@ ________________________________________________________________________________
 08/11/2023
 -SessionList and sessionRow components which allows to map the API response object for Home view.
 -click on a session open session/:id page
+I used useNavigate because it seems to be more recent than useHistory (https://medium.com/@kgreve14/usehistory-usenavigate-5b383160adba)
 
 to do:
 -API call with userId and sessionId payload (see swagger)
