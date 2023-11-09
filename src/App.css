@@ -29,3 +29,7 @@
 .footer, .plusButton {
   background-color: #00bcd4;
 }
+
+.footerContent {
+  width: 100% !important;
+}

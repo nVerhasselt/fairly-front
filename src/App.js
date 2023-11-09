@@ -7,9 +7,6 @@ import AddSession from './Pages/AddSession';
 import AddOperation from './Pages/AddOperation';
 import Settings from './Pages/Settings';
 
-// Style import
-import * as Styled from "./globalStyles";
-
 //TODO: Use children and outlet to understand their 
 const router = createBrowserRouter([
   {
@@ -33,7 +30,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: '/Session/:id',
+    path: '/Session/:sessionId',
     element: <Session/>
   },
   

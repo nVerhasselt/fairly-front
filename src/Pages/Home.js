@@ -40,7 +40,8 @@ function Home() {
     const userNames = session.members.map((member) => member.userName).join(', '); 
 
     const goToSession = () => {
-      navigate(`/Session/${session.sessionId}`)
+      navigate(`/Session/${session.sessionId}`);
+      // navigate=({pathname: '/Session', search: '?sessionId=${session.sessionId}'});
     }
 
     return (
@@ -98,7 +99,7 @@ function Home() {
       <Styled.Footer className="page-footer footer">
         <div className="container">
           <div className="row ">
-            <div className="col l4 offset-l2 s12">
+            <div className="col l4 offset-l2 s12 footerContent">
               <ul>
                 <li>
                   <a className="grey-text text-lighten-3 right" href="#!">

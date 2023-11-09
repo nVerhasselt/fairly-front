@@ -3,31 +3,42 @@ import * as Styled from "../globalStyles";
 import { PersonFill } from "react-bootstrap-icons";
 import { BiArrowBack, BiTransfer } from "react-icons/bi";
 import API_call from "../Helpers/Api_call";
+import { useParams } from 'react-router-dom';
 
+//TODO: find a way to get sessionId from url and userId (LocalStorage, see Pokedex)
 
 function Session() {
-  // const [transactionList, setTransactionList] = useState([]);
 
-  // useEffect(() => {
+  const { sessionId } = useParams();
+
+  console.log({sessionId});
+  // const urlParams = new URLSearchParams(window.location.search);
+  // var session = window.location.pathname.split('/')[2];
+  // const sessionId = session.split('=')[1];  
+  // const myParam = urlParams.get('sessionId');
+
+  const [transactionList, setTransactionList] = useState([]);
+
+  useEffect(() => {
     
-  //   const fetchDataAsync = async () => {
+    const fetchDataAsync = async () => {
     
-  //     try {
-  //       const response = await API_call().get(
-  //         `/Session/GetSessionFull?GetSessionFull?   `, {
-  //           "sessionID": 1,
-  //           "userID": 4,
-  //         }
-  //       );
-  //       setTransactionList(response.data);
-  //     } catch (exception) {
-  //       console.error(exception);
-  //     }
-  //   };
-  //   // function call
-  //   fetchDataAsync();
-  // }, []);
-  // console.log({transactionList});
+      try {
+        const response = await API_call().get(
+          `/Session/GetSessionFull?GetSessionFull?   `, {
+            "sessionID": {sessionId},
+            "userID": 4,
+          }
+        );
+        setTransactionList(response.data);
+      } catch (exception) {
+        console.error(exception);
+      }
+    };
+    // function call
+    fetchDataAsync();
+  }, []);
+  console.log({transactionList});
 
   return (
     
