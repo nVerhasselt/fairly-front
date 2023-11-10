@@ -11,7 +11,10 @@ function Session() {
 
   const { sessionId } = useParams();
 
-  console.log({sessionId});
+  console.log(sessionId);
+  console.log(typeof sessionId);
+
+  //OTHER WAY TO GET URL ELEMENT
   // const urlParams = new URLSearchParams(window.location.search);
   // var session = window.location.pathname.split('/')[2];
   // const sessionId = session.split('=')[1];  
@@ -22,13 +25,13 @@ function Session() {
   useEffect(() => {
     
     const fetchDataAsync = async () => {
+    const longSessionId = Number(sessionId);
+    console.log(typeof longSessionId);
     
+      //TODO: Get userId according authentication when authentication feature will be done.
       try {
         const response = await API_call().get(
-          `/Session/GetSessionFull?GetSessionFull?   `, {
-            "sessionID": {sessionId},
-            "userID": 4,
-          }
+          `/Session/GetSessionFull?sessionID=${longSessionId}&userID=4`
         );
         setTransactionList(response.data);
       } catch (exception) {

@@ -63,9 +63,10 @@ ________________________________________________________________________________
 -SessionList and sessionRow components which allows to map the API response object for Home view.
 -click on a session open session/:id page
 I used useNavigate because it seems to be more recent than useHistory (https://medium.com/@kgreve14/usehistory-usenavigate-5b383160adba)
-________________________________________________________________
+________________________________________________________________________________
 09/11/2023
-I can get sessionId from the url thanks to useParams from react-router-dom.
+I can get sessionId from the url thanks to useParams from react-router-dom (https://reactrouter.com/en/main/hooks/use-params)
+(See also : https://reactrouter.com/en/main/hooks/use-search-params)
 I'll have to get userId.
 The back-end is waiting a long and I think sessionId is a string. 
 I have to check how to make it work.
