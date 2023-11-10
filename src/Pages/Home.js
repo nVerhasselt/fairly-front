@@ -9,7 +9,9 @@ function Home() {
   const [sessionList, setSessionList] = useState([]);
   let navigate = useNavigate();
 
-  // console.log("SessionList", { sessionList });
+  const goToSettings = () => {
+    navigate(`/Settings`);
+  }
 
   useEffect(() => {
     // METHODE 2 => 'ASYNC/AWAIT'
@@ -85,10 +87,14 @@ function Home() {
       <Styled.Header>Fairly App</Styled.Header>
 
       <Styled.Main className="container-fluid">
+
         {/* SESSION LIST COMPONENT CALL */}
         <SessionList />
+
+
         //TODO: Icone notifications invitation session, demande de remboursement
         d'amis, remboursement paiement reçu.
+
 
         <Styled.PlusButton className="btn-floating btn-large waves-effect waves-light plusButton">
           <i className="material-icons">add</i>
@@ -103,7 +109,7 @@ function Home() {
               <ul>
                 <li>
                   <a className="grey-text text-lighten-3 right" href="#!">
-                    <PersonFill size={30} />
+                    <PersonFill size={30} onClick={() => goToSettings()}/>
                   </a>
                 </li>
               </ul>

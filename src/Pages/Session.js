@@ -3,16 +3,14 @@ import * as Styled from "../globalStyles";
 import { PersonFill } from "react-bootstrap-icons";
 import { BiArrowBack, BiTransfer } from "react-icons/bi";
 import API_call from "../Helpers/Api_call";
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 //TODO: find a way to get sessionId from url and userId (LocalStorage, see Pokedex)
 
 function Session() {
 
   const { sessionId } = useParams();
-
-  console.log(sessionId);
-  console.log(typeof sessionId);
+  let navigate = useNavigate();
 
   //OTHER WAY TO GET URL ELEMENT
   // const urlParams = new URLSearchParams(window.location.search);
@@ -26,7 +24,6 @@ function Session() {
     
     const fetchDataAsync = async () => {
     const longSessionId = Number(sessionId);
-    console.log(typeof longSessionId);
     
       //TODO: Get userId according authentication when authentication feature will be done.
       try {
@@ -41,31 +38,58 @@ function Session() {
     // function call
     fetchDataAsync();
   }, []);
+
   console.log({transactionList});
+
+  // *************************************************************
+  // TRANSACTION ROW COMPONENT
+  // *************************************************************
+  function TransactionRow({ transaction, index }) {
+    return (
+
+      <>
+        {/* Session Name */}
+        <div className="collection-item">
+          <Styled.MainRow>{transaction.title}</Styled.MainRow>
+        </div>
+      </>
+    );
+  }
+
+  // *************************************************************
+
+
+  // *************************************************************
+  // TRANSACTION LIST COMPONENT
+  // *************************************************************
+  function TransactionList() {
+    return (
+      <Styled.Collection className="row">
+        <div className="collection">
+          {transactionList?.transactions?.map((transaction, index) => (
+            <TransactionRow
+              key={`transaction-${index}`}
+              transaction={transaction}
+              index={index}
+            />
+          ))}
+        </div>
+      </Styled.Collection>
+    );
+  }
+  // *************************************************************
 
   return (
     
     <body>
 
-      <Styled.Header>Session Name</Styled.Header>
+      <Styled.Header>{transactionList.name}</Styled.Header>
 
       <Styled.Main className="container-fluid">
+
+        {/* TRANSACTION LIST COMPONENT CALL */}
+        <TransactionList />
         
-        <Styled.Collection className="row">
-          <div className="collection">
-            <a href="#!" className="collection-item">
-              First transaction
-            </a>
-
-            <a href="#!" className="collection-item">
-              Operation name
-            </a>
-
-            <a href="#!" className="collection-item">
-              Transaction
-            </a>
-          </div>
-        </Styled.Collection>
 
         <Styled.PlusButton className="btn-floating btn-large waves-effect waves-light plusButton">
           <i className="material-icons">add</i>
@@ -80,7 +104,7 @@ function Session() {
               <Styled.FooterNavList>
                 <li>
                   <a className="grey-text text-lighten-3" href="#!">
-                    <BiArrowBack size={30} />
+                    <BiArrowBack size={30} onClick={() => navigate(-1)}/>
                   </a>
                 </li>
 
