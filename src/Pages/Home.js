@@ -13,6 +13,10 @@ function Home() {
     navigate(`/Settings`);
   }
 
+  const goToAddSession = () => {
+    navigate(`/AddSession`);
+  }
+
   useEffect(() => {
     // METHODE 2 => 'ASYNC/AWAIT'
     const fetchDataAsync = async () => {
@@ -33,9 +37,6 @@ function Home() {
     fetchDataAsync();
   }, []);
 
-  // *************************************************************
-  // SESSION ROW COMPONENT
-  // *************************************************************
   function SessionRow({ session, index }) {
 
     //map the session users and join them with coma to display them inline after session name
@@ -58,13 +59,6 @@ function Home() {
     );
   }
 
-  // *************************************************************
-
-
-
-  // *************************************************************
-  // SESSION LIST COMPONENT
-  // *************************************************************
   function SessionList() {
     return (
       <Styled.Collection className="row">
@@ -80,7 +74,6 @@ function Home() {
       </Styled.Collection>
     );
   }
-  // *************************************************************
 
   return (
     <body>
@@ -89,14 +82,15 @@ function Home() {
       <Styled.Main className="container-fluid">
 
         {/* SESSION LIST COMPONENT CALL */}
-        <SessionList />
+        <SessionList className="col s12 l8 offset-l2 xl6 offset-xl3"/>
 
 
         //TODO: Icone notifications invitation session, demande de remboursement
         d'amis, remboursement paiement reçu.
 
 
-        <Styled.PlusButton className="btn-floating btn-large waves-effect waves-light plusButton">
+        <Styled.PlusButton className="btn-floating btn-large waves-effect waves-light plusButton" 
+          onClick={() => goToAddSession()}>
           <i className="material-icons">add</i>
         </Styled.PlusButton>
         

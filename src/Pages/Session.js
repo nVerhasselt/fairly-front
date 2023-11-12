@@ -12,6 +12,16 @@ function Session() {
   const { sessionId } = useParams();
   let navigate = useNavigate();
 
+  const goToSettings = () => {
+    navigate(`/Settings`);
+  }
+  
+  const goToAddTransaction = () => {
+    navigate(`/AddTransaction`);
+  }
+  
+
+
   //OTHER WAY TO GET URL ELEMENT
   // const urlParams = new URLSearchParams(window.location.search);
   // var session = window.location.pathname.split('/')[2];
@@ -39,11 +49,8 @@ function Session() {
     fetchDataAsync();
   }, []);
 
-  console.log({transactionList});
 
-  // *************************************************************
-  // TRANSACTION ROW COMPONENT
-  // *************************************************************
+
   function TransactionRow({ transaction, index }) {
     return (
 
@@ -51,17 +58,12 @@ function Session() {
         {/* Session Name */}
         <div className="collection-item">
           <Styled.MainRow>{transaction.title}</Styled.MainRow>
+          <div></div>
         </div>
       </>
     );
   }
 
-  // *************************************************************
-
-
-  // *************************************************************
-  // TRANSACTION LIST COMPONENT
-  // *************************************************************
   function TransactionList() {
     return (
       <Styled.Collection className="row">
@@ -77,7 +79,6 @@ function Session() {
       </Styled.Collection>
     );
   }
-  // *************************************************************
 
   return (
     
@@ -91,7 +92,8 @@ function Session() {
         <TransactionList />
         
 
-        <Styled.PlusButton className="btn-floating btn-large waves-effect waves-light plusButton">
+        <Styled.PlusButton className="btn-floating btn-large waves-effect waves-light plusButton"
+          onClick={() => goToAddTransaction()}>
           <i className="material-icons">add</i>
         </Styled.PlusButton>
       </Styled.Main>
@@ -117,7 +119,7 @@ function Session() {
 
                 <li>
                   <a className="grey-text text-lighten-3" href="#!">
-                    <PersonFill size={30} />
+                    <PersonFill size={30} onClick={() => goToSettings()}/>
                   </a>
                 </li>
               </Styled.FooterNavList>

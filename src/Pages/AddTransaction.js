@@ -1,21 +1,25 @@
 import React from "react";
 import * as Styled from "../globalStyles";
 import { BiArrowBack, BiCheck } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
-function AddOperation() {
+
+function AddTransaction() {
+let navigate = useNavigate();
+
   return (
     <body>
       <div className="container-fluid">
-        <Styled.Header>Nouvelle opération</Styled.Header>
+        <Styled.Header>Nouvelle transaction</Styled.Header>
 
         <Styled.Form className="row">
-          <div className="input-field col s12">
+          <div className="input-field col s12 l8 offset-l2 xl6 offset-xl3">
 
-            <input placeholder="Titre" id="operation_title" type="text" />
+            <input placeholder="Titre" id="transaction_title" type="text" />
 
             <select class="browser-default">
               <option value="" disabled selected>
-                Type d'opération
+                Type de transaction
               </option>
               <option value="1">Dépense</option>
               <option value="2">Revenu</option>
@@ -43,7 +47,7 @@ function AddOperation() {
             />
           </div>
 
-          <div className="input-field col s12">
+          <div className="input-field col s12 l8 offset-l2 xl6 offset-xl3">
             <Styled.TitleH1>Participants</Styled.TitleH1>
 
             <input
@@ -56,14 +60,14 @@ function AddOperation() {
         </Styled.Form>
       </div>
 
-      <Styled.Footer className="page-footer cyan darken-2">
+      <Styled.Footer className="page-footer footer">
         <div className="container">
           <div className="row ">
             <div className="col l4 offset-l2 s12">
               <ul>
                 <li>
                   <a className="grey-text text-lighten-3 left" href="#!">
-                    <BiArrowBack size={30} />
+                    <BiArrowBack size={30} onClick={() => navigate(-1)} />
                   </a>
                 </li>
                 <li>
@@ -80,4 +84,4 @@ function AddOperation() {
   );
 }
 
-export default AddOperation;
+export default AddTransaction;

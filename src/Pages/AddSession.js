@@ -2,8 +2,11 @@ import React from "react";
 import * as Styled from "../globalStyles";
 import '../App.css';
 import { BiArrowBack, BiCheck } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 function AddSession() {
+let navigate = useNavigate();
+
     return (
 
       <body>
@@ -13,7 +16,7 @@ function AddSession() {
           <Styled.Header>Nouvelle session</Styled.Header>
     
           <Styled.Form className="row">
-            <div className="input-field col s12">
+            <div className="input-field col s12 l8 offset-l2">
 
               <input
                 placeholder="Titre"
@@ -29,7 +32,7 @@ function AddSession() {
 
             </div>
 
-            <div className="input-field col s12">
+            <div className="input-field col s12 l8 offset-l2">
                 <Styled.TitleH1>Participants</Styled.TitleH1>
 
                 <input
@@ -50,7 +53,7 @@ function AddSession() {
 
               <div className="col l4 offset-l2 s12">
                 <ul>
-                  <li><a className="grey-text text-lighten-3 left" href="#!"><BiArrowBack size={30}/></a></li>
+                  <li><a className="grey-text text-lighten-3 left" href="#!"><BiArrowBack size={30} onClick={() => navigate(-1)}/></a></li>
                   <li><a className="grey-text text-lighten-3 right" href="#!"><BiCheck size={30}/></a></li>
                 </ul>
               </div>

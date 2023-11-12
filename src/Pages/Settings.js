@@ -1,6 +1,8 @@
 import React from "react";
 import * as Styled from "../globalStyles";
 import { BiArrowBack, BiCheck } from "react-icons/bi";
+import { useParams, useNavigate } from 'react-router-dom';
+
 
 // -Nom d'utilisateur
 // -Adresse mail associée
@@ -21,6 +23,9 @@ import { BiArrowBack, BiCheck } from "react-icons/bi";
 // -Liste des opérations enregistrées
 
 function Settings() {
+  let navigate = useNavigate();
+
+
   return (
     <body>
       <div className="container-fluid">
@@ -88,14 +93,14 @@ function Settings() {
         </Styled.Form>
       </div>
 
-      <Styled.Footer className="page-footer cyan darken-2">
+      <Styled.Footer className="page-footer footer">
         <div className="container">
           <div className="row ">
             <div className="col l4 offset-l2 s12">
               <ul>
                 <li>
                   <a className="grey-text text-lighten-3 left" href="#!">
-                    <BiArrowBack size={30} />
+                    <BiArrowBack size={30} onClick={() => navigate(-1)}/>
                   </a>
                 </li>
 

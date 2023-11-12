@@ -4,7 +4,7 @@ import Login from './Pages/Login';
 import Home from './Pages/Home';
 import Session from './Pages/Session';
 import AddSession from './Pages/AddSession';
-import AddOperation from './Pages/AddOperation';
+import AddTransaction from './Pages/AddTransaction';
 import Settings from './Pages/Settings';
 
 //TODO: Use children and outlet to understand their 
@@ -35,8 +35,8 @@ const router = createBrowserRouter([
   },
   
   {
-    path: '/AddOperation',
-    element: <AddOperation/>
+    path: '/AddTransaction',
+    element: <AddTransaction/>
   }
 ]);
 

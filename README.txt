@@ -1,4 +1,4 @@
-I'm trying to work on this project since a long time.
+I'm trying to work on this project to practice react and keep coding.
 
 I don't have much time because I am working in a restaurant until I find a company. 
 
@@ -70,11 +70,14 @@ I can get sessionId from the url thanks to useParams from react-router-dom (http
 I'll have to get userId.
 The back-end is waiting a long and I think sessionId is a string. 
 I have to check how to make it work.
+________________________________________________________________________________
+11/11/2023
+Added some navigation links
 
-to do:
--API call with userId and sessionId payload (see swagger)
--Components to map transactions
+//TODO:
+-Pull les modif du remote repo
 -Display name, payor, total amount, date -> onClick -> expands and display amount for each, edit button
+-Register / Login Token local storage + passr le token dans le header dans le call à l'API.
 ________________________________________________________________________________
 
 From Home page I can go on Session page after clicking on session div thanks to the sessionId added ad the and of the url. 
