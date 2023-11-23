@@ -67,7 +67,7 @@ function Session() {
   function TransactionList() {
     return (
       <Styled.Collection className="row">
-        <div className="collection">
+        <div className="collection col s12 l8 offset-l2 xl6 offset-xl3">
           {transactionList?.transactions?.map((transaction, index) => (
             <TransactionRow
               key={`transaction-${index}`}
@@ -101,7 +101,7 @@ function Session() {
       <Styled.Footer className="page-footer footer">
         <div className="container">
           <div className="row ">
-            <div className="col l4 offset-l2 s12">
+            <div>
 
               <Styled.FooterNavList>
                 <li>

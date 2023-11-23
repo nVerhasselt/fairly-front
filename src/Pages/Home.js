@@ -62,7 +62,7 @@ function Home() {
   function SessionList() {
     return (
       <Styled.Collection className="row">
-        <div className="collection">
+        <div className="collection col s12 l8 offset-l2 xl6 offset-xl3">
           {sessionList?.map((session, index) => (
             <SessionRow
               key={`session-${index}`}
@@ -82,7 +82,7 @@ function Home() {
       <Styled.Main className="container-fluid">
 
         {/* SESSION LIST COMPONENT CALL */}
-        <SessionList className="col s12 l8 offset-l2 xl6 offset-xl3"/>
+        <SessionList />
 
 
         //TODO: Icone notifications invitation session, demande de remboursement

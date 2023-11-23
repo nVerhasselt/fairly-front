@@ -1,22 +1,29 @@
 import './App.css';
 import { createBrowserRouter, RouterProvider, Link, NavLink, Outlet } from 'react-router-dom';
 import Login from './Pages/Login';
+import Register from './Pages/Register';
 import Home from './Pages/Home';
 import Session from './Pages/Session';
 import AddSession from './Pages/AddSession';
 import AddTransaction from './Pages/AddTransaction';
 import Settings from './Pages/Settings';
+import Balance from './Pages/Balance';
 
 //TODO: Use children and outlet to understand their 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home/>
+    element: <Login/>
   },
  
   {
-    path: '/Login',
-    element: <Login/>
+    path: '/Register',
+    element: <Register/>
+  },
+
+  {
+    path: '/Home',
+    element: <Home/>
   },
 
   {
@@ -37,6 +44,11 @@ const router = createBrowserRouter([
   {
     path: '/AddTransaction',
     element: <AddTransaction/>
+  },
+
+  {
+    path: '/Balance',
+    element: <Balance/>
   }
 ]);
 

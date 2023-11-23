@@ -33,3 +33,13 @@
 .footerContent {
   width: 100% !important;
 }
+
+.iconStyle {
+  font-size: 60px;
+  background: #00bcd4;
+  border-radius: 50px;
+  color: white;
+  padding: 0.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+};
