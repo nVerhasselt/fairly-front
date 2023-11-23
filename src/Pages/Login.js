@@ -10,12 +10,6 @@ function Login() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
-    //TODO: continue this:
-
-    //Appel API endpoint : /User/Login
-    //Payload => "username": "string", "password":"string"
-    //Respponse => Token
-
     const getToken = async () => {
       localStorage.clear(); 
       const customer = await API_call()
