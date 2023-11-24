@@ -63,6 +63,7 @@ export const TitleH1 = styled.h1`
 export const FooterNavList = styled.ul`
     display: flex;
     justify-content: space-between;
+    padding-top: 15px;
 `;
 
 export const Notifictions = styled.label`

@@ -19,8 +19,6 @@ function Session() {
   const goToAddTransaction = () => {
     navigate(`/AddTransaction`);
   }
-  
-
 
   //OTHER WAY TO GET URL ELEMENT
   // const urlParams = new URLSearchParams(window.location.search);
@@ -38,7 +36,7 @@ function Session() {
       //TODO: Get userId according authentication when authentication feature will be done.
       try {
         const response = await API_call().get(
-          `/Session/GetSessionFull?sessionID=${longSessionId}&userID=4`
+          `/Session/GetSessionFull?sessionID=${longSessionId}&userID=${localStorage.getItem('userId')}`
         );
         setTransactionList(response.data);
       } catch (exception) {

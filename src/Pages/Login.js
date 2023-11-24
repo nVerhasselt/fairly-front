@@ -22,8 +22,10 @@ function Login() {
               return { error: true, message: JSON.stringify(e) }
           })
       if (!customer.error) {
-          let token = customer.token
+          let token = customer.token;
+          let userId = customer.user.id;
           localStorage.setItem('token', token);
+          localStorage.setItem('userId', userId)
           return token
       }
   }

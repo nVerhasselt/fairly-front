@@ -32,7 +32,7 @@ function Settings() {
         <Styled.Header>Settings</Styled.Header>
 
         <Styled.Form className="row">
-          <div className="input-field col s12">
+          <div className="input-field col s12 l8 offset-l2 xl6 offset-xl3">
 
 
         {/* SWITCH */}
@@ -79,7 +79,7 @@ function Settings() {
             />
           </div>
 
-          <div className="input-field col s12">
+          <div className="input-field col s12 l8 offset-l2 xl6 offset-xl3">
             <Styled.TitleH1>Opérations régulières</Styled.TitleH1>
 
             <input
@@ -96,8 +96,8 @@ function Settings() {
       <Styled.Footer className="page-footer footer">
         <div className="container">
           <div className="row ">
-            <div className="col l4 offset-l2 s12">
-              <ul>
+            <div>
+            <Styled.FooterNavList>
                 <li>
                   <a className="grey-text text-lighten-3 left" href="#!">
                     <BiArrowBack size={30} onClick={() => navigate(-1)}/>
@@ -109,7 +109,8 @@ function Settings() {
                     <BiCheck size={30} />
                   </a>
                 </li>
-              </ul>
+            </Styled.FooterNavList>
+
             </div>
           </div>
         </div>

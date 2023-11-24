@@ -27,7 +27,7 @@ function Home() {
       try {
         // dans une méthode asynchrone, l'appel au mot-clé 'await' permet de déclencher une fonction et d'attendre son résultat.
         const response = await API_call().get(
-          "/Session/GetUserSessionsOverview?userID=4"
+          `/Session/GetUserSessionsOverview?userID=${localStorage.getItem('userId')}`
         );
         // on passe donc à la ligne du dessous quand le get est terminé, sauf s'il y a une erreur
         // En ce cas on est dans le catch.
