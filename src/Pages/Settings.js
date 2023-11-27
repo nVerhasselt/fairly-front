@@ -1,8 +1,7 @@
 import React from "react";
 import * as Styled from "../globalStyles";
 import { BiArrowBack, BiCheck } from "react-icons/bi";
-import { useParams, useNavigate } from 'react-router-dom';
-
+import { useParams, useNavigate } from "react-router-dom";
 
 // -Nom d'utilisateur
 // -Adresse mail associée
@@ -10,21 +9,20 @@ import { useParams, useNavigate } from 'react-router-dom';
 // -Notifications
 
 // -Enrigistrer une opération:
-    //-Titre
-    //-Type
-    //-Montant
-    //-Date
-        //Ne pas répéter (cliquable) au clique -> Répéter checkbox déroulant
-            //Tous les jours
-            //Chaque semaine
-            //Chaque mois
-            //Chaque année
+//-Titre
+//-Type
+//-Montant
+//-Date
+//Ne pas répéter (cliquable) au clique -> Répéter checkbox déroulant
+//Tous les jours
+//Chaque semaine
+//Chaque mois
+//Chaque année
 
 // -Liste des opérations enregistrées
 
 function Settings() {
   let navigate = useNavigate();
-
 
   return (
     <body>
@@ -33,12 +31,10 @@ function Settings() {
 
         <Styled.Form className="row">
           <div className="input-field col s12 l8 offset-l2 xl6 offset-xl3">
-
-
-        {/* SWITCH */}
+            {/* SWITCH */}
 
             <div class="switch">
-                <Styled.Notifictions> Notifications </Styled.Notifictions>    
+              <Styled.Notifictions> Notifications </Styled.Notifictions>
               <label>
                 Off
                 <input type="checkbox" />
@@ -89,7 +85,6 @@ function Settings() {
               className="validate"
             />
           </div>
-
         </Styled.Form>
       </div>
 
@@ -97,10 +92,10 @@ function Settings() {
         <div className="container">
           <div className="row ">
             <div>
-            <Styled.FooterNavList>
+              <Styled.FooterNavList>
                 <li>
                   <a className="grey-text text-lighten-3 left" href="#!">
-                    <BiArrowBack size={30} onClick={() => navigate(-1)}/>
+                    <BiArrowBack size={30} onClick={() => navigate(-1)} />
                   </a>
                 </li>
 
@@ -109,8 +104,7 @@ function Settings() {
                     <BiCheck size={30} />
                   </a>
                 </li>
-            </Styled.FooterNavList>
-
+              </Styled.FooterNavList>
             </div>
           </div>
         </div>

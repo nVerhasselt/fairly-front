@@ -5,8 +5,6 @@ import * as Styled from "../globalStyles";
 import { PersonFill } from "react-bootstrap-icons";
 import API_call from "../Helpers/Api_call";
 
-//TODO: Get User Id to display user login session
-
 
 function Home() {
   const [sessionList, setSessionList] = useState([]);

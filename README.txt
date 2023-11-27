@@ -73,8 +73,6 @@ I have to check how to make it work.
 ________________________________________________________________________________
 11/11/2023
 Added some navigation links
-
-//TODO:
 -Pull les modif du remote repo
 -Display name, payor, total amount, date -> onClick -> expands and display amount for each, edit button
 -Register / Login Token local storage + passr le token dans le header dans le call à l'API.
@@ -88,3 +86,17 @@ How to get sessionId?
 With localStorage? https://blog.logrocket.com/localstorage-javascript-complete-guide/#:~:text=The%20setItem()%20method%20allows,the%20value%20attached%20to%20it.
 Or lastIndex? https://stackoverflow.com/questions/3730359/extract-url-fragment-using-jquery
 What is the best use?
+________________________________________________________________________________
+24/11/2023
+Authentication ok
+
+//TODO 
+Register page. Create a user. 
+Display infos via Settings page.
+Edit user infos via settings page.
+Delete user. Add a button "Delete my account" in Settings page.
+
+
+I want to work on CRUD for sessions and transactions
+
+ 

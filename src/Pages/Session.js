@@ -5,8 +5,6 @@ import { BiArrowBack, BiTransfer } from "react-icons/bi";
 import API_call from "../Helpers/Api_call";
 import { useParams, useNavigate } from 'react-router-dom';
 
-//TODO: find a way to get sessionId from url and userId (LocalStorage, see Pokedex)
-
 function Session() {
 
   const { sessionId } = useParams();
@@ -33,7 +31,6 @@ function Session() {
     const fetchDataAsync = async () => {
     const longSessionId = Number(sessionId);
     
-      //TODO: Get userId according authentication when authentication feature will be done.
       try {
         const response = await API_call().get(
           `/Session/GetSessionFull?sessionID=${longSessionId}&userID=${localStorage.getItem('userId')}`

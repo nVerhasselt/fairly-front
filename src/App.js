@@ -9,7 +9,7 @@ import AddTransaction from './Pages/AddTransaction';
 import Settings from './Pages/Settings';
 import Balance from './Pages/Balance';
 
-//TODO: Use children and outlet to understand their 
+//TODO: Use children and outlet to understand
 const router = createBrowserRouter([
   {
     path: '/',
